@@ -1,6 +1,18 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import { SiBitcoin, SiEthereum, SiCardano, SiDogecoin } from "react-icons/si";
+import {
+  SiBitcoin,
+  SiEthereum,
+  SiCardano,
+  SiDogecoin,
+  SiBitcoincash,
+  SiLitecoin,
+  SiRipple,
+  SiMonero,
+  SiStellar,
+  SiDash,
+  SiZcash,
+} from "react-icons/si";
 import { FaChartLine } from "react-icons/fa";
 import Lottie from "lottie-react";
 import heroanimation from "../../assets/heroanimation.json";
@@ -11,18 +23,13 @@ const Hero = () => {
     { id: 2, icon: SiEthereum, handle: "ETH", price: 1921.3, change: -3.1 },
     { id: 3, icon: SiCardano, handle: "ADA", price: 1.23, change: -1.1 },
     { id: 4, icon: SiDogecoin, handle: "DOGE", price: 1.6, change: 7.6 },
-    { id: 1, icon: SiBitcoin, handle: "BTC", price: 25640, change: 7.4 },
-    { id: 2, icon: SiEthereum, handle: "ETH", price: 1921.3, change: -3.1 },
-    { id: 3, icon: SiCardano, handle: "ADA", price: 1.23, change: -1.1 },
-    { id: 4, icon: SiDogecoin, handle: "DOGE", price: 1.6, change: 7.6 },
-    { id: 1, icon: SiBitcoin, handle: "BTC", price: 25640, change: 0 },
-    { id: 2, icon: SiEthereum, handle: "ETH", price: 1921.3, change: -3.1 },
-    { id: 3, icon: SiCardano, handle: "ADA", price: 1.23, change: -1.1 },
-    { id: 4, icon: SiDogecoin, handle: "DOGE", price: 1.6, change: 7.6 },
-    { id: 1, icon: SiBitcoin, handle: "BTC", price: 25640, change: 7.4 },
-    { id: 2, icon: SiEthereum, handle: "ETH", price: 1921.3, change: -3.1 },
-    { id: 3, icon: SiCardano, handle: "ADA", price: 1.23, change: -1.1 },
-    { id: 4, icon: SiDogecoin, handle: "DOGE", price: 1.6, change: 7.6 },
+    { id: 1, icon: SiBitcoincash, handle: "BCH", price: 600.5, change: 2.3 },
+    { id: 2, icon: SiLitecoin, handle: "LTC", price: 180.7, change: -1.5 },
+    { id: 3, icon: SiRipple, handle: "XRP", price: 0.85, change: 0.2 },
+    { id: 4, icon: SiMonero, handle: "XMR", price: 250.1, change: 3.6 },
+    { id: 5, icon: SiStellar, handle: "XLM", price: 0.3, change: -0.1 },
+    { id: 6, icon: SiDash, handle: "DASH", price: 200.2, change: 1.2 },
+    { id: 7, icon: SiZcash, handle: "ZEC", price: 150.9, change: -2.3 },
   ];
 
   return (
