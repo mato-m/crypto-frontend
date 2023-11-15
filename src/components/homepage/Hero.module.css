@@ -1,0 +1,134 @@
+.heroDiv {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.heroPrices {
+  flex-shrink: 0;
+  width: 400px;
+  height: 300px;
+  background: #ffffff44;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 10px #ffffff60;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.heroPrices > h3 {
+  text-align: center;
+}
+h1 {
+  font-size: 2.2rem;
+  background: -webkit-linear-gradient(#000, #8b95ed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2 {
+  font-size: 1rem;
+  background: -webkit-linear-gradient(#8b95ed, #8835d3);
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cryptoHeroList {
+  font-size: 1.2rem;
+  margin: 0 10px;
+  overflow-y: scroll;
+  height: 100%;
+}
+.cryptoHeroName,
+.cryptoHeroChange {
+  margin-left: 10px;
+}
+.cryptoHeroListItem {
+  display: flex;
+  margin: 50px 0;
+  align-items: center;
+  justify-content: space-around;
+}
+.cryptoHeroListItem > div:first-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.heroPricesRow {
+  display: flex;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+}
+.heroMain {
+  min-height: calc(100svh - 400px);
+  margin: 20px 0;
+  width: 100%;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroLottie {
+  height: 300px;
+}
+.heroMainInner {
+  border-radius: 20px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #ffffff44;
+  box-shadow: 0px 0px 15px 10px #ffffff60;
+  overflow: hidden;
+}
+.cryptoHeroHeader {
+  width: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.heroPricesRowWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroMainInner > div:first-child {
+  padding: 30px;
+}
+
+.chartButton {
+  border: solid #000 1px;
+  color: #000;
+  padding: 1550;
+  border-radius: 20;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.chartButton:hover {
+  background: #000;
+  color: #fff;
+}
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .heroMainInner {
+    flex-direction: row;
+  }
+  .heroLottie {
+    height: 80vh;
+  }
+}
